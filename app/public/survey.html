@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Friend Finder</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+            	<h1>Survey Questions</h1>
+        	</div>
+            <div class="panel-body">
+                <h3>About You</h3>
+                <label>Your Name (Required)</label>
+				<div class="input-group">
+					<input type="text" class="form-control" id="username">
+				</div>
+				<label>Link to Photo Image (Required)</label>
+				<div class="input-group">
+					<input type="text" class="form-control" id="imageurl" aria-describedby="basic-addon3">
+				</div>
+            </div>
+            <!-- List group -->
+            <ul class="list-group">
+                <li class="list-group-item">
+                	<label>Question 1</label>
+                	<p id="question1">You think pizza is a perfect food.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+                <li class="list-group-item">
+                	<label>Question 2</label>
+                	<p id="question2">You enjoy staying in more than going out.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+                <li class="list-group-item">
+                	<label>Question 3</label>
+                	<p id="question3">Maintaining an open mind is important to you.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+                <li class="list-group-item">
+                	<label>Question 4</label>
+                	<p id="question4">You prefer an excellent book to an excellent movie.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+                <li class="list-group-item">
+                	<label>Question 5</label>
+                	<p id="question5">You find enjoyment in watching sports.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+                <li class="list-group-item">
+                	<label>Question 6</label>
+                	<p id="question6">Politics are important to you.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+                <li class="list-group-item">
+                	<label>Question 7</label>
+                	<p id="question7">You enjoy the outdoors.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+                <li class="list-group-item">
+                	<label>Question 8</label>
+                	<p id="question8">You prefer rain to shine.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+                <li class="list-group-item">
+                	<label>Question 9</label>
+                	<p id="question9">Horror movies are enjoyable to you.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+                <li class="list-group-item">
+                	<label>Question 10</label>
+                	<p id="question10">You enjoy the escape of a good video game.</p>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select an Option <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li>5 (Strongly Agree)</li>
+						<li>4</li>
+						<li>3 (Neutral)</li>
+						<li>2</li>
+						<li>1 (Strongly Disagree)</li>
+					</ul>
+                </li>
+            </ul>
+            <a class="btn btn-primary btn-lg" href="survey.html" role="button"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Submit</a>
+			</p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <a href="/api/friends">API Friends List</a> |
+            <a href="https://github.com/NLegge/friendFinder">GitHub Repo</a>
+        </div>
+    </footer>
+</body>
+</html>
