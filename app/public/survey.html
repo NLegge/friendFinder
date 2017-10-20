@@ -210,17 +210,33 @@
 	            };
 	            // AJAX post the data to the friends API. 
 	            $.post("https://limitless-earth-45269.herokuapp.com/api/friends", newFriend, function(data) {
-	                // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-	                $("#matchName").text(data.name);
-	                $('#matchPic').attr("src", data.photo);
-	                // Show the modal with the best match 
-	                $("#resultsModal").modal('toggle');
+	            	addMatch();
 	            });
 	        } else {
 	            alert("Please fill out all fields before submitting!");
 	        }
 	        return false;
 	    });
+
+	    function addMatch() {
+	    	var newUserScores = req.body.scores
+			var user2 = [];
+			var totalDifference = 41;
+			for (var i = 0; i < friends.length; i++) {
+				var newTotal = 0;
+				for (var x = 0; x < user1.length; x++) {
+					var difference = Math.abs(user1[x] - friends[i].score[x]);
+					newTotal += difference;
+					if (newTotal < totalDifference) {
+						totalDifference = newTotal;
+						user2.push(friends[i]);
+					}
+				}
+			}
+			$("#matchName").text(user2.name);
+		    $('#matchPic').attr("src", user2.photo);
+	    }
+	    
     </script>
 </body>
 </html>
