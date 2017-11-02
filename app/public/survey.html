@@ -209,9 +209,16 @@
 	                ]
 	            };
 	            // AJAX post the data to the friends API. 
-	            $.post("https://limitless-earth-45269.herokuapp.com/api/friends", newFriend, function(data) {
-	            	addMatch();
-	            });
+	             $.ajax({
+                    type: 'post',
+                    url: '/api/friends',
+                    data: JSON.stringify(newFriend),
+                    contentType: "application/json; charset=utf-8",
+                    traditional: true,
+                    success: function (data) {
+                        }
+                 });
+
 	        } else {
 	            alert("Please fill out all fields before submitting!");
 	        }
